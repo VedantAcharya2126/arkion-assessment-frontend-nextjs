@@ -45,12 +45,10 @@ export async function getCertificates() {
  * @param id 
  * @returns JSON response containing the details of a specific certificate based on the provided ID.
  */
-export async function getCertificateID(
-  id: string
-) {
+export async function getCertificateID(id: string) {
   const response =
     await fetch(
-      `${API_URL}/getCertificate/${id}`,
+      `${API_URL}/getCertificateID/${id}`,
       {
         cache: "no-store"
       }
